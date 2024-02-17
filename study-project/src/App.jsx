@@ -1,3 +1,14 @@
+import { useBearStore } from './stores/store';
+
 export default function App() {
-	return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+	const { bears, increasePopulation, removeAllBears } = useBearStore((state) => state);
+	console.log(bears);
+	console.log(increasePopulation);
+	return (
+		<>
+			<h1>{bears} around here ... </h1>
+			<button onClick={increasePopulation}>one up</button>
+			<button onClick={removeAllBears}>remove all</button>
+		</>
+	);
 }
