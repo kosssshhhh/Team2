@@ -1,6 +1,4 @@
-import React from 'react';
-
-// import Layout from ""
+import Layout from '../layout';
 import AboutPage from '../pages/about/page';
 import BoardPage from '../pages/board/page';
 import HomePage from '../pages/home/page';
@@ -9,7 +7,7 @@ import SchedulePage from '../pages/schedule/page';
 
 const mainRoutes = {
 	path: '/',
-	// element: <Layout/>,
+	element: <Layout />,
 	children: [
 		{
 			path: 'about',
@@ -20,7 +18,7 @@ const mainRoutes = {
 			element: <BoardPage />,
 		},
 		{
-			path: 'home',
+			path: '/',
 			element: <HomePage />,
 		},
 		{
