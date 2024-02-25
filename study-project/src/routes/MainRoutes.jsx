@@ -4,30 +4,37 @@ import BoardPage from '../pages/board/page';
 import HomePage from '../pages/home/page';
 import MembersPage from '../pages/members/page';
 import SchedulePage from '../pages/schedule/page';
+import StudentLogin from '../pages/login/student/page';
+import { routes } from '../constants/routes';
+import AuthPage from '../pages/auth/page';
 
 const mainRoutes = {
 	path: '/',
 	element: <MainLayout />,
 	children: [
 		{
-			path: 'about',
+			path: routes.about.path,
 			element: <AboutPage />,
 		},
 		{
-			path: 'board',
+			path: routes.board.path,
 			element: <BoardPage />,
 		},
 		{
-			path: '/',
+			path: routes.home.path,
 			element: <HomePage />,
 		},
 		{
-			path: 'members',
+			path: routes.members.path,
 			element: <MembersPage />,
 		},
 		{
-			path: 'schedule',
+			path: routes.schedule.path,
 			element: <SchedulePage />,
+		},
+		{
+			path: routes.admin.auth.path,
+			element: <AuthPage />,
 		},
 	],
 };

@@ -20,11 +20,19 @@ export const routes = {
 		path: '/about',
 		title: 'About',
 	},
-	secret: {
-		// TODO: 권한 부여하는 페이지 외에 다른 페이지도 있다면 추가
-		professor: {
-			path: '/secret/professor',
-			title: 'Professor',
+	login: {
+		path: '/login',
+		title: 'Login',
+	},
+	admin: {
+		// TODO: 다른 관리자 페이지가 있다면 추가
+		auth: {
+			path: '/admin/auth',
+			title: 'Auth',
+		},
+		login: {
+			path: '/admin/login',
+			title: 'AdminLogin',
 		},
 	},
 };

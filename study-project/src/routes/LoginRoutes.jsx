@@ -1,17 +1,18 @@
-import AuthLayout from '../layout/AuthLayout';
-import StudentLogin from '../pages/login/student';
-import AdminLogin from '../pages/login/admin';
+import LoginLayout from '../layout/LoginLayout';
+import StudentLogin from '../pages/login/student/page';
+import AdminLogin from '../pages/login/admin/page';
+import { routes } from '../constants/routes';
 
 const loginRoutes = {
-	path: 'login',
-	element: <AuthLayout />,
+	path: '/',
+	element: <LoginLayout />,
 	children: [
 		{
-			path: 'admin',
+			path: routes.admin.login.path,
 			element: <AdminLogin />,
 		},
 		{
-			path: 'student',
+			path: routes.login.path,
 			element: <StudentLogin />,
 		},
 	],
