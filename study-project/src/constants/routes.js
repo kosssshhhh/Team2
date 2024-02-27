@@ -6,23 +6,23 @@ export const routes = {
 	},
 	board: {
 		path: '/board',
-		title: 'Board',
+		title: 'BOARD',
 	},
 	members: {
 		path: '/members',
-		title: 'Members',
+		title: 'MEMBERS',
 	},
 	schedule: {
 		path: '/schedule',
-		title: 'Schedule',
+		title: 'SCHEDULE',
 	},
 	about: {
 		path: '/about',
-		title: 'About',
+		title: 'ABOUT US',
 	},
 	login: {
 		path: '/login',
-		title: 'Login',
+		title: 'SIGN UP',
 	},
 	admin: {
 		// TODO: 다른 관리자 페이지가 있다면 추가
