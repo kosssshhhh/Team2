@@ -58,7 +58,7 @@ export default function Header() {
 										key={index}
 										to={content.path}
 										className={`px-6  hover:text-black transition duration-300 ${
-											isActive(content.path) ? 'text-black' : 'text-grey'
+											isActive(content.path) ? 'text-black' : 'text-textGrey'
 										}`}>
 										{content.title}
 									</Link>
