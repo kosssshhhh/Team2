@@ -1,3 +1,3 @@
 export default function StudentLogin() {
-	return <>학생 로그인</>;
+	return <>학생로그인</>;
 }
