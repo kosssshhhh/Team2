@@ -1,7 +1,11 @@
 export default function AboutPage() {
 	return (
 		<main>
-			<h3>어바웃 페이지</h3>
+			<div className="flex min-h-screen w-screen flex-col ">
+				<div className="flex flex-col flex-grow mx-auto w-1/5">
+					<Outlet />
+				</div>
+			</div>
 		</main>
 	);
 }
