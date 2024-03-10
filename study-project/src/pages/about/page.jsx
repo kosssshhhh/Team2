@@ -6,7 +6,7 @@ const ProfileCard = ({ image, name, intro }) => {
 	return (
 		<div className="flex flex-col items-center mx-14 relative">
 		<img src={image} alt={name} className="w-56 h-56 object-cover" />
-		<div className="absolute bottom-0 w-60 h-20 bg-opacity-75 bg-white text-black text-center flex items-center justify-center">
+		<div className="absolute bottom-0 w-60 h-20 bg-opacity-75 bg-white text-black text-left flex items-center justify-left">
 		  <div>
 			<p className="font-bold">{name}</p>
 			<p>{intro}</p>
@@ -42,9 +42,9 @@ export default function AboutPage() {
 				<p className="pt-20 text-2xl font-semibold text-center">개발자</p>
 				<p className="pt-3 text-sm text-center pb-20">HCClab Study사이트 개발자들을 소개합니다.</p>
 				<div className="flex justify-around items-end mx-auto pb-32">
-					<ProfileCard image={AImage} name="강준우 @소속" intro="하이디 어쩌구 하이디 어" />
-					<ProfileCard image={BImage} name="양희동 @소속" intro="하이디 어쩌구 하이디 어" />
-					<ProfileCard image={CImage} name="홍길동 @소속" intro="하이디 어쩌구 하이디 어" />
+					<ProfileCard image={AImage} name="강준우 @소속" intro="내용 삽입" />
+					<ProfileCard image={BImage} name="양희동 @소속" intro="내용 삽입" />
+					<ProfileCard image={CImage} name="홍길동 @소속" intro="내용 삽입" />
 				</div>
 
 			</div>
