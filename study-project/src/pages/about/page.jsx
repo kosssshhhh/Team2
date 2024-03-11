@@ -38,10 +38,10 @@ export default function AboutPage() {
 			</div>
 			</div>
 
-			<div className="bg-white">
+			<div className="bg-white pb-40">
 				<p className="pt-20 text-2xl font-semibold text-center">개발자</p>
 				<p className="pt-3 text-sm text-center pb-20">HCClab Study사이트 개발자들을 소개합니다.</p>
-				<div className="flex justify-around items-end mx-auto pb-32">
+				<div className="flex justify-around items-end mx-auto">
 					<ProfileCard image={AImage} name="강준우 @소속" intro="내용 삽입" />
 					<ProfileCard image={BImage} name="양희동 @소속" intro="내용 삽입" />
 					<ProfileCard image={CImage} name="홍길동 @소속" intro="내용 삽입" />
