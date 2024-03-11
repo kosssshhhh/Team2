@@ -45,7 +45,7 @@ export default function Header() {
 
 	return (
 		<>
-			<header className="h-20 fixed top-0 w-full z-50 bg-white">
+			<header className="h-20 sticky top-0 w-full z-50 bg-white">
 				<div className="flex justify-between items-center h-20">
 					<Link to={routes.home.path} className="flex items-center">
 						<img src="logo.png" alt="HCC Lab Logo" className="object-contain w-34 h-14 mx-4" />
