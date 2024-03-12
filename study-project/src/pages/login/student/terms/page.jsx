@@ -4,7 +4,7 @@ import { routes } from '../../../../constants/routes';
 
 export default function TermsPage() {
 	return (
-		<div className="flex flex-col flex-grow w-4/5 justify-start items-start gap-4 mx-auto">
+		<div className="flex flex-col flex-grow w-3/4 justify-start items-start gap-4 mx-auto">
 			<h2 className="text-2xl font-semibold mt-48">약관에 동의가 필요해요</h2>
 			<div className="flex border-red-400 w-full border px-4 py-4 rounded-lg bg-[#F8F9FB] mt-1">
 				<label className="flex justify-start items-center">
