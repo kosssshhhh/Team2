@@ -2,10 +2,10 @@
 export default function HomePage() {
 	return (
 		<>
-		<div className="bg-white pt-20 pb-40 mx-auto w-4/5 ">
-			<div className="flex  justify-center items-center"> 
+		<div className="bg-white pt-20 pb-40 mx-auto  w-4/6 ">
+			<div className="flex   justify-between items-center"> 
 
-				<div className=" flex-1  max-w-fit pr-32 ">
+				<div className=" flex-1  max-w-fit  ">
 					<h1 className="text-4xl font-bold mb-4">KW-HCC Lab FE Study</h1>
 					<p className="mb-1">- HCC Lab 학부 연구생을 중심으로 만들어진 FE 스터디에요.</p>
 					<p className="mb-1">- 좋은 개발에 대해 고민하고 더 나은 경험을 제공하기 위한 방법들을 함께 나누어봐요.</p>
