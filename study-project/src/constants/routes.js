@@ -24,6 +24,14 @@ export const routes = {
 		path: '/login',
 		title: 'SIGN UP',
 	},
+	terms: {
+		path: '/terms-agreement',
+		title: 'Terms-Agreement',
+	},
+	userInfo: {
+		path: '/user-info',
+		title: 'User-Info',
+	},
 	admin: {
 		// TODO: 다른 관리자 페이지가 있다면 추가
 		auth: {
