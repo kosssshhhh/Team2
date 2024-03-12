@@ -9,7 +9,7 @@ export default function Member({ member, index }) {
 				backgroundImage: `url(${member.image})`,
 				backgroundSize: 'cover',
 			}}>
-			<div className="flex flex-col p-2 bg-white h-1/4 opacity-70 z-10 rounded-b-lg backdrop-blur-sm text-textBlack">
+			<div className="flex flex-col p-3 pl-5 bg-white h-1/4 opacity-70 z-10 rounded-b-lg backdrop-blur-sm text-textBlack">
 				<div className="flex font-bold">
 					<p className="mr-2">{member.name}</p>
 					<p>@{member.department}</p>
