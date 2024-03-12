@@ -2,7 +2,7 @@
 export default function HomePage() {
 	return (
 		<>
-		<div className="bg-white pt-20 pb-40 mx-auto  w-4/6 ">
+		<div className="bg-white pt-40 pb-40 mx-auto  w-4/6 ">
 			<div className="flex   justify-between items-center"> 
 
 				<div className=" flex-1  max-w-fit  ">
