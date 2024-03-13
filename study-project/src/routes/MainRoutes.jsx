@@ -40,16 +40,16 @@ const mainRoutes = {
 			element: <SchedulePage />,
 		},
 		{
+			path: routes.detail.path,
+			element: <DetailPage />,
+		},
+		{
 			path: routes.admin.auth.path,
 			element: <AuthPage />,
 		},
 		{
 			path: routes.admin.home.path,
 			element: <AdminHomePage />,
-		},
-		{
-			path: routes.detail.path,
-			element: <DetailPage />,
 		},
 	],
 };
