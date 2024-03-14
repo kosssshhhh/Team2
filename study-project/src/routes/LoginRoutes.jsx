@@ -1,9 +1,11 @@
 import LoginLayout from '../layout/LoginLayout';
-import StudentLogin from '../pages/login/student/login/page';
-import AdminLogin from '../pages/login/admin/page';
+
 import { routes } from '../constants/routes';
-import TermsPage from '../pages/login/student/terms/page';
-import UserInfoPage from '../pages/login/student/info/page';
+
+import StudentLogin from '../pages/authentication/student/login/page';
+import AdminLogin from '../pages/authentication/admin/login/page';
+import TermsPage from '../pages/authentication/student/terms/page';
+import UserInfoPage from '../pages/authentication/student/info/page';
 
 const loginRoutes = {
 	path: '/',
