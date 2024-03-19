@@ -1,11 +1,14 @@
 export default function AdminHomePage() {
 	return (
 		<>
-		<div className="bg-white pt-40 pb-32 mx-auto  w-7/12 ">
+		<div className="bg-white pt-20 pb-32 mx-auto  w-7/12 ">
 			<div className="flex   justify-between items-center"> 
 
 				<div className=" flex-1  max-w-fit  ">
-					<h1 className="text-3xl font-semibold mb-4">환영합니다 관리자님 </h1>
+				<div className="flex-1 flex items-center max-w-fit">
+					<h1 className="text-3xl font-semibold mb-4">환영합니다 관리자님</h1>
+					<img src="/src/assets/images/setting.png" alt="설정" className="ml-2 pb-4" style={{ width: '25px' }}/>
+				</div>
 					<p className="mb-1 text-sm">KW-HCC Lab FE 스터디 멤버들의 공간 입니다.</p>
 					<p className="mb-1 text-sm pb-20">관리 페이지를 통해 스터디 멤버를 확인하고 관리 할 수 있습니다.</p>
 					
@@ -14,6 +17,7 @@ export default function AdminHomePage() {
 					<p className=" text-xs ">스터디 맴버관리</p>
 					</button>
 				</div>
+				
 				<div className="flex justify-end  pt-4">
 					<img src="/src/assets/images/uni.png"
 					style={{ width: '210px', height:  'center' }} />
