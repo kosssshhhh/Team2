@@ -1,4 +1,5 @@
 import { dummy } from './_data/mock';
+import ToggleBtn from './_components/toggleBtn/ToggleBtn';
 
 // TODO: Table 컴포넌트화, 권한 부여 토글 구현
 
@@ -13,7 +14,7 @@ export default function AuthPage() {
 				<div className="h-100 mx-auto overflow-auto mt-16 relative">
 					<table className="table-auto w-full">
 						<thead>
-							<tr className="sticky top-0 left-0 bg-backgroundGrey border-b">
+							<tr className="sticky top-0 left-0 bg-backgroundGrey border-b z-50">
 								<th className="px-12 py-5">No</th>
 								<th className="px-12 py-2">이름</th>
 								<th className="px-12 py-2">학과</th>
@@ -30,7 +31,9 @@ export default function AuthPage() {
 										<td className="px-12 py-3">{data.name}</td>
 										<td className="px-12 py-3">{data.department}</td>
 										<td className="px-12 py-3">{data.email}</td>
-										<td className="px-12 py-3">{data.role}</td>
+										<td className="px-12 py-3">
+											<ToggleBtn />
+										</td>
 										<td className="px-12 py-3">{data.signinData}</td>
 									</tr>
 								);
