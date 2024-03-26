@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { routes } from '../../../constants/routes';
 
+import logo from '../../../assets/images/logo.png';
+
 const headerContents = [
 	{
 		title: 'HOME',
@@ -48,7 +50,7 @@ export default function Header() {
 			<header className="h-20 sticky top-0 w-full z-50 bg-white">
 				<div className="flex justify-between items-center h-20">
 					<Link to={routes.home.path} className="flex items-center">
-						<img src="logo.png" alt="HCC Lab Logo" className="object-contain w-34 h-14 mx-4" />
+						<img src={logo} alt="HCC Lab Logo" className="object-contain w-34 h-14 mx-4" />
 					</Link>
 					<div className="flex justify-end items-center">
 						<ul className="mx-6">
