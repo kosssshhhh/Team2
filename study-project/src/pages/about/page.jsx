@@ -5,14 +5,14 @@ import CImage from '/Users/june/Documents/GitHub/Team2_June/study-project/src/as
 const ProfileCard = ({ image, name, intro }) => {
 	return (
 		<div className="flex flex-col items-center mx-14 relative">
-		<img src={image} alt={name} className="w-56 h-56 object-cover" />
-		<div className="absolute bottom-0 w-60 h-20 bg-opacity-75 bg-white text-black text-left flex items-center justify-left">
-		  <div>
-			<p className="font-bold">{name}</p>
-			<p>{intro}</p>
-		  </div>
+			<img src={image} alt={name} className="w-56 h-56 object-cover" />
+			<div className="absolute bottom-0 w-60 h-10 opacity-70 z-10 rounded-b-lg backdrop-blur-xl bg-white/30 text-textBlack">
+				<div className="flex flex-col p-3 pl-5">
+					<p className="font-bold">{name}</p>
+					<p>{intro}</p>
+				</div>
+			</div>
 		</div>
-	  </div>
 	);
 };
 
