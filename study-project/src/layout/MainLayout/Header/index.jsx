@@ -5,32 +5,7 @@ import { routes } from '../../../constants/routes';
 
 import logo from '../../../assets/images/logo.png';
 
-const headerContents = [
-	{
-		title: 'HOME',
-		path: '/home',
-	},
-	{
-		title: 'BOARD',
-		path: '/board',
-	},
-	{
-		title: 'MEMBERS',
-		path: '/members',
-	},
-	{
-		title: 'SCHEDULE',
-		path: '/schedule',
-	},
-	{
-		title: 'ABOUT US',
-		path: '/about',
-	},
-	{
-		title: 'SIGN UP',
-		path: '/login',
-	},
-];
+import { checkLoginUserRole, isLogin } from './_utils/checkLoginUser';
 
 export default function Header() {
 	const location = useLocation();
@@ -54,7 +29,7 @@ export default function Header() {
 					</Link>
 					<div className="flex justify-end items-center">
 						<ul className="mx-6">
-							{headerContents.map((content, index) => {
+							{checkLoginUserRole().map((content, index) => {
 								return (
 									<Link
 										key={index}
