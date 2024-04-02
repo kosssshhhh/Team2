@@ -5,7 +5,7 @@ import { routes } from '../../../constants/routes';
 
 import logo from '../../../assets/images/logo.png';
 
-import { checkLoginUserRole, isLogin } from './_utils/checkLoginUser';
+import { checkLoginUserRole } from './_utils/checkLoginUser';
 
 export default function Header() {
 	const location = useLocation();

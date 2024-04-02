@@ -7,9 +7,9 @@ export const useBearStore = create((set) => ({
 }));
 
 export const useUserStore = create((set) => ({
-	user: { id: 'ko', name: 'ko', role: 'admin' },
+	// user: { id: 'ko', name: 'ko', role: 'admin' },
 	// user: { id: 'ko', name: 'ko', role: 'member' },
-	// user: { id: '', name: '', role: '' },
+	user: { id: '', name: '', role: '' },
 
 	login: (user) => set({ user }),
 	logout: () => set({ user: { id: '', name: '', role: '' } }),
