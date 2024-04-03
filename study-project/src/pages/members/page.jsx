@@ -1,8 +1,16 @@
 import { tags, members } from './_data/mock';
 import Member from './_components/Member';
 import Tag from './_components/Tag';
+import axios from 'axios';
+import { useEffect } from 'react';
 
 export default function MembersPage() {
+	useEffect(() => {
+		axios.get('/members').then((response) => {
+			console.log(response.data);
+		});
+	}, []);
+
 	return (
 		<main>
 			<div className="flex flex-col w-screen items-center bg-backgroundGrey p-20">
