@@ -1,15 +1,10 @@
-import { tags, members } from './_data/mock';
+import { tags } from './_data/mock';
 import Member from './_components/Member';
 import Tag from './_components/Tag';
-import axios from 'axios';
-import { useEffect } from 'react';
+import useFetchData from '../../hooks/useFetchData';
 
 export default function MembersPage() {
-	useEffect(() => {
-		axios.get('/members').then((response) => {
-			console.log(response.data);
-		});
-	}, []);
+	const member = useFetchData('/members');
 
 	return (
 		<main>
@@ -26,7 +21,7 @@ export default function MembersPage() {
 					})}
 				</div>
 				<div className="flex flex-wrap justify-center px-20 ">
-					{members.map((member, index) => {
+					{member.map((member, index) => {
 						return Member({ member, index });
 					})}
 				</div>

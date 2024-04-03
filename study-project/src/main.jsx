@@ -8,13 +8,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { queryClient } from './api/queryClient.js';
 
-if (process.env.NODE_ENV === 'development') {
-	const { worker } = await import('./mocks/browser');
-	worker.start();
-}
+console.log('NODE_ENV:', import.meta.env.VITE_NODE_ENV);
 
 async function enableMocking() {
-	if (process.env.NODE_ENV !== 'development') {
+	if (import.meta.env.VITE_NODE_ENV !== 'development') {
 		return;
 	}
 
